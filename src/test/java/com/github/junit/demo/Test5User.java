@@ -1,14 +1,12 @@
 package com.github.junit.demo;
 
-import com.github.database.rider.core.api.dataset.DataSet;
 import com.github.junit.demo.entity.User;
 import com.github.junit.demo.service.UserService;
 import org.junit.jupiter.api.Test;
 
 import javax.annotation.Resource;
-import java.util.concurrent.TimeUnit;
 
-public class Test1User extends BaseTest {
+public class Test5User extends BaseTest {
 
     @Resource
     private UserService userService;
