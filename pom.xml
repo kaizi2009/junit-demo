@@ -11,8 +11,6 @@
     <modules>
         <module>provides</module>
         <module>customers</module>
-        <module>customer-a</module>
-        <module>provide-e</module>
     </modules>
 
 
