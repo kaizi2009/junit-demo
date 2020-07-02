@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 @SpringBootTest(classes = {TestApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@ExtendWith(DBUnitExtension.class)
+//@ExtendWith(DBUnitExtension.class)
 @RunWith(JUnitPlatform.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class BaseTest {
