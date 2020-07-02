@@ -16,6 +16,10 @@ org.springframework.cloud.contract.spec.Contract.make {
         headers {
             header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE)
         }
-        body("zhangkai")
+        body(
+"""
+               {"k":1}
+            """
+        )
     }
 }

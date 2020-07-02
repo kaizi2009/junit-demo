@@ -12,6 +12,6 @@ public class TestController {
     @GetMapping(value = "/user", produces = "application/json;charset=UTF-8")
     public Object getUser() {
         System.out.println("org.github.junit.demo.TestController.getUser");
-        return "zhangkai";
+        return "{\"k\":1}";
     }
 }

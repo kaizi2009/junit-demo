@@ -10,6 +10,9 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
+import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +21,8 @@ import java.util.concurrent.TimeUnit;
 //@ExtendWith(DBUnitExtension.class)
 @RunWith(JUnitPlatform.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+//remove::end[]
+@DirtiesContext
 public abstract class BaseTest {
     public BaseTest() {
         System.out.println("Instance");
