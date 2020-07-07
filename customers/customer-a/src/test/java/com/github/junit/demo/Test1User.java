@@ -1,5 +1,6 @@
 package com.github.junit.demo;
 
+import com.github.database.rider.core.api.dataset.DataSet;
 import com.github.junit.demo.entity.User;
 import com.github.junit.demo.service.UserService;
 import org.junit.jupiter.api.Test;
@@ -11,12 +12,12 @@ public class Test1User extends BaseTest {
     @Resource
     private UserService userService;
 
-    /*@Test
+    @Test
     @DataSet(value = "datasets/xml/users.xml")
-    public void getUserById() {
-        User user = userService.getById(1L);
+    public void getUserByIdInXml() {
+        User user = userService.getById(100L);
         System.out.println(user.getName());
-    }*/
+    }
 
     @Test
     public void getUserById() {
