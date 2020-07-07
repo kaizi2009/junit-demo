@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(JUnitPlatform.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 //remove::end[]
+//消除缓存
 @DirtiesContext
 public abstract class BaseTest {
     public BaseTest() {
