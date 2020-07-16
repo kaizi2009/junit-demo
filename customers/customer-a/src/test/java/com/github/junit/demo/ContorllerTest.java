@@ -20,10 +20,6 @@ public class ContorllerTest extends BaseTest {
     @Autowired
     MockMvc mockMvc;
 
-    //remove::start[]
-//    @StubRunnerPort("provide-e")
-//    int producerPort;
-
     @Test
     public void test() throws Exception {
         System.out.println(1);

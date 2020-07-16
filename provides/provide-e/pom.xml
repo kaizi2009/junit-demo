@@ -14,6 +14,7 @@
 
     <build>
         <plugins>
+            <!--生产契约的maven插件-->
             <plugin>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-contract-maven-plugin</artifactId>

@@ -13,8 +13,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 @SpringBootTest(classes = {TestApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-//@ExtendWith(DBUnitExtension.class)
-//@RunWith(JUnitPlatform.class)
 @RunWith(SpringRunner.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class ContractVerifierBase {
@@ -22,7 +20,7 @@ public class ContractVerifierBase {
     private WebApplicationContext applicationContext;
     @Before
     public void setup() {
+        //rest接口验证，需要注入spring上下文
         RestAssuredMockMvc.webAppContextSetup(applicationContext);
-        //RestAssuredMockMvc.standaloneSetup(goodsController); 也可以使用standaloneSetup启动单个controller。
     }
 }

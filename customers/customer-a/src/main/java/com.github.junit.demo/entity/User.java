@@ -1,7 +1,5 @@
 package com.github.junit.demo.entity;
 
-import org.springframework.stereotype.Repository;
-
 public class User {
     private Integer id;
     private String name;

@@ -6,11 +6,15 @@ import com.github.junit.demo.service.UserService;
 import org.junit.jupiter.api.Test;
 
 import javax.annotation.Resource;
+import javax.sql.DataSource;
 
 public class Test1User extends BaseTest {
 
     @Resource
     private UserService userService;
+
+    @Resource
+    private DataSource dataSource;
 
     @Test
     @DataSet(value = "datasets/xml/users.xml")

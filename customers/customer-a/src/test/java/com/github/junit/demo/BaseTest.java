@@ -18,10 +18,8 @@ import java.util.concurrent.TimeUnit;
 
 @SpringBootTest(classes = {TestApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
-@ExtendWith(DBUnitExtension.class)
 @RunWith(JUnitPlatform.class)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-//remove::end[]
 //消除缓存
 @DirtiesContext
 public abstract class BaseTest {
